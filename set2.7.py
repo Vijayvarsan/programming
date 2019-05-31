@@ -1,0 +1,14 @@
+n=input()
+m=len(n)
+n=int(n)
+temp=n
+sum1=0
+while(temp>0):
+    l=temp%10
+    sum1+=pow(l,m)
+    temp//=10
+    if(sum1==n):
+        print("yes")
+        break
+else:
+        print("no")
